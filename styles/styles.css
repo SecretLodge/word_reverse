@@ -16,9 +16,6 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 }
-.header {
-    
-}
 .header__logo {
     margin: 37px 0;
     font-weight: 500;
@@ -27,9 +24,6 @@ body {
 .body {
     max-width: 855px;
     margin: 100px auto 0 auto;
-}
-.body__about {
-    
 }
 .body__name {
     font-size: 128px;
