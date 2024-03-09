@@ -1,6 +1,7 @@
 :root {
     --black-color: #1B1C20;
     --blue-color: #3A8DEF;
+    --black-blue-color: #0f57a9;
     --white-color: #fff;
     --white-color-50: #8D8D8F;
     --white-color-30: #646567; 
@@ -9,7 +10,7 @@
 body {
     background-color: var(--black-color);
     font-family: 'Google Sans';
-    color: var(--white-color)
+    color: var(--white-color);
 }
 
 .wrapper {
@@ -47,17 +48,41 @@ body {
     background-color: var(--black-color);
     border: solid 0.5px var(--white-color-50);
     border-radius: 10px;
-    color: var(--white-color-30)
+    color: var(--white-color-30);
+    transition-duration: .8s;
+}
+.body__input-text:focus {
+    border: solid 0.5px var(--blue-color)
 }
 .body__button-text {
     padding: 16.5px 16.5px;
     background-color: var(--blue-color);
     border-radius: 10px;
+    transition-duration: .3s;
 }
-.body__button-text img {
+.body__button-text:hover {
+    background-color: var(--black-blue-color) 
+}
+.body__button-img {
     height: 37px;
     filter: invert(100%);
+    transition-duration: .3s;
 }
+.body__button-img__pending {
+    animation-name: body__button-img__pending;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes body__button-img__pending {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .body__result {
     font-weight: 400;
     font-size: 20px;
@@ -65,7 +90,8 @@ body {
     text-align: justify;
     color: var(--white-color-30);
     margin-top: 60px;
-    height: 160px;
+    min-height: 160px;
+    word-break: break-all;
 }
 .footer {
     text-align: center;

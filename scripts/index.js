@@ -1,14 +1,17 @@
 /*
-    - БЭМ
+    // - БЭМ
     - Адаптивный дизай
     - Семантическая верстка
     - Анимация медленного появления при обновлении страницы
+    - Добавить модальное окно в свлучае ошибки
 */
-const result = document.getElementById('result')
-const button = document.getElementById('button')
-const input = document.getElementById('input')
+const result = document.getElementById('result-text')
+const button = document.getElementById('reverse-text')
+const button_img = button.querySelector('img');
+const input = document.getElementById('input-text')
 
 const SECONDS_OF_DELAY = 1;
+const CLASS_OF_PENDING_ANIMATION = 'body__button-img__pending';
 
 const delaySimulation = (seconds) => {
     return new Promise((resolve) => {
@@ -18,9 +21,12 @@ const delaySimulation = (seconds) => {
     })
 }
 
-const reverseWord = async ({ code }) => { 
+const reverseWord = async (event) => {
+    const { code } = event
+
     if(code && code === 'Enter' || !code) {
-        button.classList.add('pending')
+        event.preventDefault()
+        button_img.classList.add(CLASS_OF_PENDING_ANIMATION)
         await delaySimulation(SECONDS_OF_DELAY)
 
         if(input.value.length !== 0) {
@@ -29,8 +35,8 @@ const reverseWord = async ({ code }) => {
                 .reverse()
                 .join('')
         }
-
-        button.classList.remove('pending')
+        
+        button_img.classList.remove(CLASS_OF_PENDING_ANIMATION)
     }
 }
 
