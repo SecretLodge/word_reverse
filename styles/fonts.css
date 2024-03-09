@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Google Sans';
-    src: url('../fonts/GoogleSans-MediumItalic.eot');
+    src: url('/fonts/GoogleSans-MediumItalic.eot');
     src: local('Google Sans Medium Italic'), local('GoogleSans-MediumItalic'),
         url('GoogleSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
         url('GoogleSans-MediumItalic.woff2') format('woff2'),
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'Google Sans';
-    src: url('../fonts/GoogleSans-Bold.eot');
+    src: url('/fonts/GoogleSans-Bold.eot');
     src: local('Google Sans Bold'), local('GoogleSans-Bold'),
         url('GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
         url('GoogleSans-Bold.woff2') format('woff2'),
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Google Sans';
-    src: url('../fonts/GoogleSans-Italic.eot');
+    src: url('/fonts/GoogleSans-Italic.eot');
     src: local('Google Sans Italic'), local('GoogleSans-Italic'),
         url('GoogleSans-Italic.eot?#iefix') format('embedded-opentype'),
         url('GoogleSans-Italic.woff2') format('woff2'),
@@ -36,7 +36,7 @@
 
 @font-face {
     font-family: 'Google Sans';
-    src: url('../fonts/GoogleSans-Medium.eot');
+    src: url('/fonts/GoogleSans-Medium.eot');
     src: local('Google Sans Medium'), local('GoogleSans-Medium'),
         url('GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
         url('GoogleSans-Medium.woff2') format('woff2'),
@@ -48,7 +48,7 @@
 
 @font-face {
     font-family: 'Google Sans';
-    src: url('../fonts/GoogleSans-Regular.eot');
+    src: url('/fonts/GoogleSans-Regular.eot');
     src: local('Google Sans Regular'), local('GoogleSans-Regular'),
         url('GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
         url('GoogleSans-Regular.woff2') format('woff2'),
@@ -60,7 +60,7 @@
 
 @font-face {
     font-family: 'Google Sans';
-    src: url('../fonts/GoogleSans-BoldItalic.eot');
+    src: url('/fonts/GoogleSans-BoldItalic.eot');
     src: local('Google Sans Bold Italic'), local('GoogleSans-BoldItalic'),
         url('GoogleSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
         url('GoogleSans-BoldItalic.woff2') format('woff2'),

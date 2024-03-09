@@ -64,7 +64,10 @@ body {
     background-color: var(--black-blue-color) 
 }
 .body__button-img {
-    height: 37px;
+    max-height: 37px;
+    max-width: 37px;
+    height: 100%;
+    width: 100%;
     filter: invert(100%);
     transition-duration: .3s;
 }
