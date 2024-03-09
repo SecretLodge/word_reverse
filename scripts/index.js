@@ -4,10 +4,11 @@
     - Семантическая верстка
     - Анимация медленного появления при обновлении страницы
     - Добавить модальное окно в свлучае ошибки
+    - Сделать кнопочку копирования в буффер обмена
 */
 const result = document.getElementById('result-text')
 const button = document.getElementById('reverse-text')
-const button_img = button.querySelector('img');
+const buttonImg = button.querySelector('img');
 const input = document.getElementById('input-text')
 
 const SECONDS_OF_DELAY = 1;
@@ -26,7 +27,7 @@ const reverseWord = async (event) => {
 
     if(code && code === 'Enter' || !code) {
         event.preventDefault()
-        button_img.classList.add(CLASS_OF_PENDING_ANIMATION)
+        buttonImg.classList.add(CLASS_OF_PENDING_ANIMATION)
         await delaySimulation(SECONDS_OF_DELAY)
 
         if(input.value.length !== 0) {
@@ -36,7 +37,7 @@ const reverseWord = async (event) => {
                 .join('')
         }
         
-        button_img.classList.remove(CLASS_OF_PENDING_ANIMATION)
+        buttonImg.classList.remove(CLASS_OF_PENDING_ANIMATION)
     }
 }
 
